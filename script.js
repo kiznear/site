@@ -11,11 +11,15 @@ function calculateDateDifference() {
     const months = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
 
     let resultText;
-    if (months === 0) {
+    if (months == 0) {
         resultText = `${years} years`;
+    } else {
+    if (months == 1) {
+        resultText = `${years} and ${months} month`
     } else {
         resultText = `${years} years and ${months} months`;
     }
+}
     
     document.getElementById("result").textContent = resultText;
 }
