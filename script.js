@@ -15,7 +15,7 @@ function calculateDateDifference() {
         resultText = `${years} years`;
     } else {
     if (months == 1) {
-        resultText = `${years} and ${months} month`
+        resultText = `${years} years and ${months} month`
     } else {
         resultText = `${years} years and ${months} months`;
     }
